@@ -259,7 +259,6 @@ public class RoutePlanUtil implements OnGetRoutePlanResultListener {
                 }
             };
             overlayManager.addToMap();
-            overlayManager.zoomToSpan();
         } else {
             Toast.makeText(mReactContext, "walkingroute结果数<0", Toast.LENGTH_SHORT).show();
             return;
