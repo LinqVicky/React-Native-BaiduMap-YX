@@ -72,6 +72,9 @@ export default {
           DeviceEventEmitter.once('onGetReverseGeoCodeResult', resp => {
             resp.latitude = parseFloat(resp.latitude);
             resp.longitude = parseFloat(resp.longitude);
+            resp.x = resp.longitude;
+            resp.y = resp.latitude;
+            resp.poi = resp.streetName;            
             resolve(resp);
           });
         }, (error) => {
